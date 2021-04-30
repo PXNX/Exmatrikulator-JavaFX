@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
-   <children>
-      <FlowPane prefHeight="200.0" prefWidth="200.0" />
-   </children>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <FlowPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="tf_input" promptText="enter your age"/>
+                <Button fx:id="bt_submit" mnemonicParsing="false" text="calculate age"/>
+                <Label fx:id="la_output" text="Label"/>
+            </children>
+        </FlowPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
 </GridPane>
